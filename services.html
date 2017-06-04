@@ -28,7 +28,11 @@
     });    
     $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.framingSlider').slick({});
+    $('.framingSlider').slick({dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1});
     $('.modal').modal({
       ready: function(modal,trigger){
         $('.slider').slider({height: "100%"});
@@ -39,28 +43,10 @@
 </script>  
 </head>
 <body class="grey lighten-4">
-  <div id="header"></div>
+
+<div id="header"></div>
   <div class="container">   
     <div class="section">
-    <div class="framingSlider">
-    <div class="grey lighten-3">          
-      <div class="col s12 l9"><img src="images/framing1.jpg">
-        <div class="  col s12 l3">This is an image description</div>
-      </div>
-    </div>        
-
-    <div">
-      <div class="col s12 l9"><imgsrc="images/framing2.jpg">
-        <div class="  col s12 l3">This is an image description</div>
-      </div>
-    </div>        
-
-    <div class="grey lighten-3" >          
-      <div class="col s12 l9"><img src="images/framing3.jpg">
-        <div class="  col s12 l3">This is an image description</div>
-      </div>
-    </div>        
-  </div> 
       <div class="row">
         <div class="col s12 m1"></div>
         <div class="col s12 m3">
