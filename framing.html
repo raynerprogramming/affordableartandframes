@@ -14,15 +14,12 @@
 <body class="grey lighten-4">
   <div id="header"></div>
   <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>
     <div class="carousel-item red white-text" href="#one!">
       <div class="row">
-        <div class="col s6">
-        <a href="#two!"><img src="https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg"/></a>
+      <div class="col s12 l9">
+          <a href="#two!"><img src="images/framing1.jpg"/></a>
         </div>
-        <div class="col s6">
+        <div class="col s12 l3">
           <h2>First Panel</h2>
           <p class="blue white-text">This is your first panel
           </p>
@@ -43,22 +40,27 @@
       <p class="white-text">This is your fourth panel</p>
     </div>
   </div>
-  <div class="carousel carousel-slider">
-    <div class="carousel-item" ><a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a></div>
-    <div class="carousel-item" ><a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a></div>
-    <div class="carousel-item" ><a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a></div>
-    <div class="carousel-item" ><a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a></div>
-  </div>
   <div id="footer"></div>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
    $(function(){
-     $('.carousel').carousel({full_width: true,startHeight:'450px'});
-     $("#header").load("header.html"); 
-     $("#footer").load("footer.html"); 
-   });
- </script>
+    $('.carousel.carousel-slider').each(function() {
+      var view = $(this);
+      var firstImage = view.find('.carousel-item img').first();
+      var imageHeight = firstImage[0].naturalHeight;
+      if (imageHeight > 0) {
+        view.css('height', imageHeight / firstImage[0].naturalWidth * view.width());
+      }
+      else {
+        view.css('height', 400);
+      }
+    });
+    $('.carousel').carousel({full_width: true});
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });
+</script>
 </body>
 </html>
