@@ -19,7 +19,13 @@
     $(function(){
       $("#header").load("header.html"); 
       $("#footer").load("footer.html"); 
-      $("#framingModal").load("modals/framingModal.html");
+      $("#framingModal").load("modals/framingModal.html" , function(){
+        $('.framingSlider').slick({dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1});
+      };
       $("#artModal").load("modals/artModal.html");
       $("#canvasModal").load("modals/canvasModal.html");
       $("#shadowModal").load("modals/shadowModal.html");
@@ -28,11 +34,7 @@
     });    
     $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.framingSlider').slick({dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1});
+    
     $('.modal').modal({    });
 
   });
