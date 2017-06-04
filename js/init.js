@@ -2,8 +2,7 @@
 	$(function(){
 
 		$('.button-collapse').sideNav();
-		$("#header").load("header.html"); 
-		$("#footer").load("footer.html"); 
+		$('.parallax').parallax();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
