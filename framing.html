@@ -13,40 +13,44 @@
   <div class="container">
 
     <div class="carousel carousel-slider center" data-indicators="true">
-      <div class="carousel-item red white-text" href="#one!">
+      <div class="carousel-item white-text" href="#one!">
         <div class="row">
           <div class="col s12 l9">
             <a href="#two!"><img src="images/framing1.jpg"/></a>
           </div>
           <div class="col s12 l3">
-            <h2>First Panel</h2>
-            <p class="blue white-text">This is your first panel
-            </p>
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+              <span class="card-title">Frame Title</span>
+                <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-      </div>
-      <div class="carousel-item amber white-text" href="#two!">
-        <h2>Second Panel</h2>
-        <p class="white-text">This is your second panel</p>
-      </div>
-      <div class="carousel-item green white-text" href="#three!">
-        <h2>Third Panel</h2>
-        <p class="white-text">This is your third panel</p>
-      </div>
-      <div class="carousel-item blue white-text" href="#four!">
-        <h2>Fourth Panel</h2>
-        <p class="white-text">This is your fourth panel</p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+          <h2>Fourth Panel</h2>
+          <p class="white-text">This is your fourth panel</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div id="footer"></div>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script> 
-    $(function(){
-      $("#header").load("header.html"); 
-      $("#footer").load("footer.html"); 
-    });
-  </script>  
-</body>
-</html>
+    <div id="footer"></div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script> 
+      $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+      });
+    </script>  
+  </body>
+  </html>
