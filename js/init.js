@@ -9,10 +9,10 @@
       var firstImage = view.find('.carousel-item img').first();
       var imageHeight = firstImage[0].height;
       if (imageHeight > 0) {
-     //   view.css('height', imageHeight);
+        view.css('height', imageHeight);
       }
       else {
-    //    view.css('height', 400);
+        view.css('height', 400);
       }
     });
     $('.carousel').carousel({full_width: true});

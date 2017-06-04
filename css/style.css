@@ -40,5 +40,6 @@
  	height:auto;
  }
  .carousel.carousel-slider.initialized{
- 	min-height: 10vh !important 
+ 	min-height: 10vh !important ;
+ 	max-height: 700px !important ;
  }
