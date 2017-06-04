@@ -11,7 +11,7 @@
 					view.css('height', imageHeight);
 				}
 				else {
-					view.css('height', 400);
+				//	view.css('height', 400);
 				}
 			});
 			$('.carousel').carousel({full_width: true});
