@@ -15,8 +15,8 @@
   <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script> 
-    $(function(){
+  <script>    
+    $(document).ready(function(){    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
       $("#header").load("header.html"); 
       $("#footer").load("footer.html"); 
       $("#framingModal").load("modals/framingModal.html" , function(){
@@ -26,14 +26,9 @@
           slidesToShow: 1,
           slidesToScroll: 1});
       });
-    });    
-    $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    
-    $('.modal').modal({    });
-
-  });
-</script>  
+      $('.modal').modal({    });
+    });
+  </script>  
 </head>
 <body class="grey lighten-4">
   <div id="header"></div>
