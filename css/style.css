@@ -12,3 +12,4 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+.modal { width: 75% !important ; max-height: 100% !important } 
