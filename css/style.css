@@ -43,3 +43,7 @@
  	min-height: 10vh !important ;
  	max-height: 700px !important ;
  }
+ 
+ .parallax{
+ 	background-position: 50% 50% !important;
+ }
