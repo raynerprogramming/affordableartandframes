@@ -21,16 +21,31 @@
       $("#footer").load("footer.html"); 
       $("#framingModal").load("modals/framingModal.html" , function(){
         $('.framingSlider').slick({dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1});
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1});
       });
-      $("#artModal").load("modals/artModal.html");
-      $("#canvasModal").load("modals/canvasModal.html");
-      $("#shadowModal").load("modals/shadowModal.html");
-      $("#photoModal").load("modals/photoModal.html");
-      $("#glassgModal").load("modals/glassModal.html");
+      $("#artModal").load("modals/artModal.html", function(){
+        $('.slider').slider({height: "100%"});
+        $('.slider').slider('pause');
+      });
+      $("#canvasModal").load("modals/canvasModal.html", function(){
+        $('.slider').slider({height: "400px"});
+        $('.slider').slider('pause');
+      });
+      $("#shadowModal").load("modals/shadowModal.html", function(){
+        $('.slider').slider({height: "100%"});
+        $('.slider').slider('pause');
+      });
+      $("#photoModal").load("modals/photoModal.html", function(){
+        $('.slider').slider({height: "100%"});
+        $('.slider').slider('pause');
+      });
+      $("#glassgModal").load("modals/glassModal.html", function(){
+        $('.slider').slider({height: "100%"});
+        $('.slider').slider('pause');
+      });
     });    
     $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
@@ -42,7 +57,7 @@
 </head>
 <body class="grey lighten-4">
 
-<div id="header"></div>
+  <div id="header"></div>
   <div class="container">   
     <div class="section">
       <div class="row">
