@@ -47,3 +47,11 @@
  .parallax{
  	background-position: 50% 50% !important;
  }
+ .carousel .card {
+ 	height:100%;
+ 	margin:0;
+ }
+ .maxcol{
+ 	height:900px !important;
+
+ }
