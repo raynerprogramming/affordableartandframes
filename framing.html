@@ -20,7 +20,7 @@
     <div class="carousel-item red white-text" href="#one!">
       <div class="row">
         <div class="col s6">
-          <a href="#two!"><img src="images/framing1.jpg"></a>
+        <a href="#two!"><img src="https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg"/></a>
         </div>
         <div class="col s6">
           <h2>First Panel</h2>
@@ -44,7 +44,7 @@
     </div>
   </div>
   <div class="carousel carousel-slider">
-    <div class="carousel-item" ><a href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a></div>
+    <div class="carousel-item" ><a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a></div>
     <div class="carousel-item" ><a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a></div>
     <div class="carousel-item" ><a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a></div>
     <div class="carousel-item" ><a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a></div>
@@ -55,9 +55,9 @@
   <script src="js/init.js"></script>
   <script>
    $(function(){
-     $('.carousel.carousel-slider').carousel({full_width: true});
+     $('.carousel').carousel({full_width: true,startHeight:'450px'});
      $("#header").load("header.html"); 
-      $("#footer").load("footer.html"); 
+     $("#footer").load("footer.html"); 
    });
  </script>
 </body>
