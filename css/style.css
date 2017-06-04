@@ -32,3 +32,6 @@
     padding-top: 100px;
     text-shadow: 5px 5px 10px rgba(0,0,0,0.75);
 }
+.carousel-item{
+	min-height:400px;
+}
