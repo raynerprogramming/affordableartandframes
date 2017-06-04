@@ -12,6 +12,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <script> 
     $(function(){
       $("#header").load("header.html"); 
@@ -26,7 +27,7 @@
     $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal({
-      ready: functino(modal,trigger){
+      ready: function(modal,trigger){
         $('.slider').slider({height: "100%"});
       }
     });
