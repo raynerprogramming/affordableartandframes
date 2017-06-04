@@ -26,6 +26,13 @@
           slidesToShow: 1,
           slidesToScroll: 1});
       });
+      $("#artModal").load("modals/artModal.html" , function(){
+        $('.artSlider').slick({dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1});
+      });
       $('.modal').modal({    });
     });
   </script>  
@@ -41,7 +48,7 @@
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
               <a href="#framingModal">
-                <img src="images/storefront.jpg">
+                <img src="images/storefront2.jpg">
               </a> 
             </div>
             <div class="card-content no-pad">
@@ -58,7 +65,7 @@
               </a> 
             </div>
             <div class="card-content no-pad">
-              <a class="waves-effect waves-light btn fullsized grey darken-3" style="width:100%;height:100%;" href="#framingModal">Printing</a>
+              <a class="waves-effect waves-light btn fullsized grey darken-3" href="#framingModal">Printing</a>
             </div>
           </div>     
         </div>   
@@ -99,7 +106,7 @@
               </a> 
             </div>
             <div class="card-content no-pad">
-              <a class="waves-effect waves-light btn fullsized grey darken-3" href="#framingModal">Art</a>
+              <a class="waves-effect waves-light btn fullsized grey darken-3" href="#artModal">Art</a>
             </div>
           </div>
         </div>
