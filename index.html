@@ -13,16 +13,16 @@
 </head>
 
 <body ng-app="app">
-  <div ng-controller="framingController" class="container">
-    {{data}}
-    <div ng-include="'header.html'"></div>
-  </div>
-  <div class="parallax-container">
-    <div class="section">
-      <h1 class="header center grey-text text-lighten-4 maintitle">Affordable Art & Frames</h1>
-    </div>
-    <div class="parallax">
-    <img src="/affordableartandframes/images/art.jpg">
+  <div ng-include="'header.html'"></div>
+  <div ng-controller="framingController" class="container">    {{data}}
+
+    <div class="parallax-container">
+      <div class="section">
+        <h1 class="header center grey-text text-lighten-4 maintitle">Affordable Art & Frames</h1>
+      </div>
+      <div class="parallax">
+        <img src="/affordableartandframes/images/art.jpg">
+      </div>
     </div>
   </div>
   <div class="container">
