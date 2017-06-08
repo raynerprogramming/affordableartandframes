@@ -28,7 +28,7 @@ var app = angular.module('app',[])
 
 app.directive('header',function(){
 	return{
-	restrict: 'A', //This menas that it will be used as an attribute and NOT as an element. I don't like creating custom HTML elements
+	restrict: 'E',
         replace: true,
         templateUrl: "header.html",
         controller: ['$scope', '$filter', function ($scope, $filter) {
