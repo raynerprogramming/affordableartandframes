@@ -20,5 +20,7 @@ var app = angular.module('app',[])
 			$('.carousel').carousel({full_width: true});
 		});
 	}
-	$scope.init();
+	angular.element(document).ready(function () {
+        $scope.init();
+    });
 });
