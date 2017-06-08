@@ -4,7 +4,7 @@ var app = angular.module('app',[])
 
 	$scope.init = function(){
 		$(function () {
-			$('.button-collapse').sideNav();
+			$('.raynerNavBar').sideNav();
 			$('.parallax').parallax();
 			$('.carousel.carousel-slider').each(function() {
 				var view = $(this);
