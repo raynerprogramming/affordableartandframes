@@ -23,4 +23,11 @@ var app = angular.module('app',[])
 	angular.element(document).ready(function () {
         $scope.init();
     });
+
+});
+
+app.run(function($rootScope){
+  $rootScope.$on("$includeContentLoaded", function(event, templateName){
+     $('.raynerNavBar').sideNav();
+  });
 });
