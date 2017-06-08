@@ -32,7 +32,8 @@ app.directive('header',function(){
         replace: true,
         templateUrl: "header.html",
         controller: ['$scope', '$filter', function ($scope, $filter) {
-            // Your behaviour goes here :)
+            $('.raynerNavBar').sideNav();
+            $('.button-collapse').sideNav();
         }]
     }
 })
