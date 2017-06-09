@@ -1,6 +1,6 @@
 var app = angular.module('app',['ui.router'])
-.controller('framingController',function($scope){
-
+.controller('FramingController',function($scope){
+$scope.data='Framing';
 })
 .controller('RootController',function($scope,$state){
 	$scope.data='Root';
@@ -45,6 +45,6 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 	.state('framing', {
 		url:"/framing",
 		templateUrl: "templates/framing.html",
-		controller: 'FrameController'
+		controller: 'FramingController'
 	});   
 }]);
