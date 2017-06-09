@@ -17,14 +17,13 @@
 <body ng-app="app">
   <header>
     <nav class="grey darken-3" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">AFFORDABLE</a>
+      <div class="nav-wrapper container"><a id="logo-container" ui-sref="index" class="brand-logo">AFFORDABLE</a>
         <ul class="right hide-on-med-and-down">
           <li><a ui-sref="index">Home</a></li>        
           <li><a class="dropdown-button" href="" data-activates="srvDropdown">Services<i class="material-icons right">arrow_drop_down</i></a></li>    
           <li><a href="contact.html">Contact Us</a></li>    
-          <li><a href="contact.html">{{data}}</a></li>    
+          {{data}}
         </ul>
-
         <ul id="nav-mobile" class="side-nav">
           <li><a ui-sref="index">Home</a></li>        
           <li class="divider"></li>
@@ -52,7 +51,6 @@
       <li class="divider"></li>      -->
     </ul>
   </nav>
-
 </header>
 {{data}}
 <div ui-view>
@@ -63,8 +61,6 @@
       <div class="col l6 s12">
         <h5 class="white-text">Company Bio</h5>
         <p class="grey-text text-lighten-4">We are framing professionals who have been providing the Oklahoma City area with custom framing for over 30 years.</p>
-
-
       </div>
       <div class="col l2"></div>
       <div class="col l3 s12">
@@ -79,6 +75,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 </html>
