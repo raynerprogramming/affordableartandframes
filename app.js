@@ -4,35 +4,35 @@ var app = angular.module('app',['ui.router'])
 	$scope.slides = [{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
 	"title":"art2",
 	"desc":"desc2"
-	},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
-	"title":"framing1",
-	"desc":"desc1"
-	},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
-	"title":"framing3",
-	"desc":"desc3"
-	}]
+},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
+"title":"framing1",
+"desc":"desc1"
+},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
+"title":"framing3",
+"desc":"desc3"
+}]
 
-	$scope.init = function(){
-		$(function () {
-			$('.button-collapse').sideNav();
-			$('.parallax').parallax();
-			$('.carousel.carousel-slider').each(function() {
-				var view = $(this);
-				var firstImage = view.find('.carousel-item img').first();
-				var imageHeight = firstImage[0].height || 850;
-				if (imageHeight > 0) {
-					view.css('height', imageHeight);
-				}
-				else {
-					view.css('height', 850);
-				}
-			});
-			$('.carousel').carousel({full_width: true});
+$scope.init = function(){
+	$(function () {
+		$('.button-collapse').sideNav();
+		$('.parallax').parallax();
+		$('.carousel.carousel-slider').each(function() {
+			var view = $(this);
+			var firstImage = view.find('.carousel-item img').first();
+			var imageHeight = firstImage[0] ?firstImage[0].height : 850;
+			if (imageHeight > 0) {
+				view.css('height', imageHeight);
+			}
+			else {
+				view.css('height', 850);
+			}
 		});
-	}
-	angular.element(document).ready(function () {
-		$scope.init();
+		$('.carousel').carousel({full_width: true});
 	});
+}
+angular.element(document).ready(function () {
+	$scope.init();
+});
 })
 .controller('ContactController',function($scope){
 	$scope.data='Contact';
