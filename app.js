@@ -32,22 +32,18 @@ var app = angular.module('app',['ui.router'])
 });
 
 app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
-	$urlRouterProvider
-	.when("","/home");
-	//.when("/","/index");
 
 	$stateProvider
 	.state('root',{
-		url:"/",
-		abstract:true,
-		templateUrl: 'index.html'
+		url:"",
+		templateUrl: 'app.html'
 	})
-	.state('root.home', {
+	.state('home', {
 		url:"/home",
 		templateUrl: "templates/test.html",
 		controller: 'HomeController'
 	})
-	.state('root.framing', {
+	.state('framing', {
 		url:"/framing",
 		templateUrl: "templates/framing.html",
 		controller: 'FrameController'
