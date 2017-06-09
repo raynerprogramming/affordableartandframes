@@ -75,8 +75,6 @@ var app = angular.module('app',['ui.router'])
 	angular.element(document).ready(function () {
 		$scope.init();
 	});
-	$state.go('app.home');
-
 })
 .controller('HomeController',function($scope){
 	$scope.data='Home';
