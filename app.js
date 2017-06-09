@@ -37,17 +37,17 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 	//.when("/","/index");
 
 	$stateProvider
-	.state('app',{
+	.state('index',{
 		url:"/index",
 		templateUrl: 'index.html',
 		controller: "RootController"
 	})
-	.state('app.home', {
+	.state('index.home', {
 		url:"/home",
 		templateUrl: "templates/home.html",
 		controller: 'HomeController'
 	})
-	.state('app.framing', {
+	.state('index.framing', {
 		url:"/framing",
 		templateUrl: "templates/framing.html",
 		controller: 'FrameController'
