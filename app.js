@@ -39,6 +39,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 	$stateProvider
 	.state('index',{
 		url:"/index",
+		abstract:true,
 		templateUrl: 'index.html',
 		controller: "RootController"
 	})
