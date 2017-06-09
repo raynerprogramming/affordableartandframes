@@ -8295,5 +8295,3 @@ Picker.extend( 'pickadate', DatePicker )
   };
 
 }( jQuery ));
-
-$(".button-collapse").sideNav();
