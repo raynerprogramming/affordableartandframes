@@ -1,15 +1,15 @@
 var app = angular.module('app',['ui.router'])
 .controller('FramingController',function($scope){
 	$scope.data='Framing';
-	$scope.slides = [{imgsrc ="https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
-	title = "art2",
-	desc = "desc2"
-	},{imgsrc ="https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
-	title = "framing1",
-	desc = "desc1"
-	},{imgsrc ="https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
-	title = "framing3",
-	desc = "desc3"
+	$scope.slides = [{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
+	"title":"art2",
+	"desc":"desc2"
+	},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
+	"title":"framing1",
+	"desc":"desc1"
+	},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
+	"title":"framing3",
+	"desc":"desc3"
 	}]
 
 	$scope.init = function(){
