@@ -85,11 +85,11 @@ app.config(['$stateProvider', function($stateProvider){
 		abstract: true,
 		views: {
 			'header': {
-				templateUrl: 'header.html',
+				templateUrl: '/header.html',
 				controller: 'headerCtrl'
 			},
 			'footer':{
-				templateUrl: 'footer.html',
+				templateUrl: '/footer.html',
 				controller: 'footerCtrl'
 			}
 		}
@@ -98,7 +98,7 @@ app.config(['$stateProvider', function($stateProvider){
 		url: '/',
 		views: {
 			'container@': {
-				templateUrl: 'home.html'
+				templateUrl: '/home.html'
 			}
 		}
 	})
@@ -106,7 +106,7 @@ app.config(['$stateProvider', function($stateProvider){
 		url: '/other',
 		views: {
 			'container@': {
-				templateUrl: 'other.html'
+				templateUrl: '/other.html'
 			}
 		}
 	});   
