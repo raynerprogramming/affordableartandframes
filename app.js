@@ -67,7 +67,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 		url:"/home",
 		templateUrl: "templates/home.html",
 		controller: 'HomeController'
-	});   
+	})
 	.state('app.framing', {
 		url:"/framing",
 		templateUrl: "templates/framing.html",
