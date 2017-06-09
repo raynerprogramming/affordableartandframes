@@ -76,7 +76,7 @@ var app = angular.module('app',['ui.router'])
 		$scope.init();
 	});
 
-});
+})
 .controller('RootController',function($scope){
 	$scope.data='Root';
 
