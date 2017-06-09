@@ -19,7 +19,7 @@ var app = angular.module('app',['ui.router'])
 			$('.carousel.carousel-slider').each(function() {
 				var view = $(this);
 				var firstImage = view.find('.carousel-item img').first();
-				var imageHeight = firstImage[0].height;
+				var imageHeight = firstImage[0].height || 850;
 				if (imageHeight > 0) {
 					view.css('height', imageHeight);
 				}
