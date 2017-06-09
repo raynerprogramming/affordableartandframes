@@ -137,7 +137,7 @@ app.config(['$stateProvider', function($stateProvider){
 		controller: 'RootController'
 	})
 	.state('app.home', {
-		templateUrl: 'home.html',
+		templateUrl: 'templates/home.html',
 		controller: 'HomeController'
 	});   
 }]);
