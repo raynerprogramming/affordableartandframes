@@ -1,4 +1,4 @@
-var app = angular.module('app',[])
+var app = angular.module('app',['ui.router'])
 .controller('framingController',function($scope){
 	$scope.data='test';
 
@@ -97,7 +97,7 @@ app.config(['$stateProvider', function($stateProvider){
 	.state('root.home', {
 		url: '/',
 		views: {
-			'container': {
+			'container@': {
 				templateUrl: 'home.html'
 			}
 		}
@@ -105,7 +105,7 @@ app.config(['$stateProvider', function($stateProvider){
 	.state('root.other', {
 		url: '/other',
 		views: {
-			'container': {
+			'container@': {
 				templateUrl: 'other.html'
 			}
 		}
