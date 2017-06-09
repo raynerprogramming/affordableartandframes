@@ -1,6 +1,6 @@
 <div class="container">
   <div class="carousel hide-on-med-and-down carousel-slider center" data-indicators="true">
-    <div ng-repeat="slide in slides" class="carousel-item white-text" href="#one!">
+    <div ng-repeat="slide in slides" class="carousel-item white-text" my-post-repeat-directive>
       <div class="row">
         <div class="col s12 l9">
           <a href="#two!">
@@ -12,63 +12,27 @@
             <div class="card-content white-text">
               <span class="card-title">{{slide.title}}</span>
               <p>{{slide.desc}}</p>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="hide-on-large-only">
-
-      <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg">
-              <span class="card-title">Frame Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg">
-              <span class="card-title">Frame Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg">
-              <span class="card-title">Frame Title
-              </span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
+
+  <div class="hide-on-large-only">
+    <div  ng-repeat="slide in slides" class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+          <img ng-src="{{slide.imgsrc}}">
+            <span class="card-title">{{slide.title}}</span>
+          </div>
+          <div class="card-content">
+            <p>{{slide.desc}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+</div>

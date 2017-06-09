@@ -1,4 +1,5 @@
 var app = angular.module('app',['ui.router'])
+//CONTROLLERS
 .controller('FramingController',function($scope){
 	$scope.data='Framing';
 	$scope.slides = [{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
@@ -10,35 +11,15 @@ var app = angular.module('app',['ui.router'])
 },{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
 "title":"framing3",
 "desc":"desc3"
-}]
-
-$scope.init = function(){
-	$(function () {
-		$('.button-collapse').sideNav();
-		$('.parallax').parallax();
-		$('.carousel.carousel-slider').each(function() {
-			var view = $(this);
-			var firstImage = view.find('.carousel-item img').first();
-			var imageHeight = firstImage[0] ?firstImage[0].height : 850;
-			if (imageHeight > 0) {
-				view.css('height', imageHeight);
-			}
-			else {
-				view.css('height', 850);
-			}
-		});
-		$('.carousel').carousel({full_width: true});
-	});
-}
-angular.element(document).ready(function () {
-	$scope.init();
-});
+}];
 })
 .controller('ContactController',function($scope){
 	$scope.data='Contact';
+
 })
 .controller('HomeController',function($scope){
 	$scope.data='Home';
+		$scope.imgsrc = "images/frames3.jpg";
 	$scope.init = function(){
 		$(function () {
 			$('.button-collapse').sideNav();
@@ -48,8 +29,29 @@ angular.element(document).ready(function () {
 	angular.element(document).ready(function () {
 		$scope.init();
 	});
+})
+//DIRECTIVES
+.directive('myPostRepeatDirective', function() {
+  return function(scope, element, attrs) {
+    if (scope.$last){
+      // iteration is complete, do whatever post-processing
+      // is necessary
+      $('.carousel.carousel-slider').each(function() {
+			var view = $(this);
+			var firstImage = view.find('.carousel-item img').first();
+			var imageHeight = firstImage[0] ? firstImage[0].height : 850;
+			if (imageHeight > 0) {
+				view.css('height', imageHeight);
+			}
+			else {
+				view.css('height', 850);
+			}
+		});
+		$('.carousel').carousel({full_width: true});
+    }
+  };
 });
-
+//STATE CONFIG
 app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider
 	.when("","/home");
