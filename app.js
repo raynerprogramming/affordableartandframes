@@ -105,7 +105,11 @@ var app = angular.module('app',['ui.router'])
 
 });
 
-app.config(['$stateProvider', function($stateProvider){
+app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
+	$urlRouterProvider
+		.when("","/home")
+		.when("/","/home");
+
 	$stateProvider
 	.state('app',{
 		url:"/index",
