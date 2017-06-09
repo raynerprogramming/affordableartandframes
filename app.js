@@ -44,7 +44,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 	})
 	.state('index.home', {
 		url:"/home",
-		templateUrl: "templates/home.html",
+		templateUrl: "templates/test.html",
 		controller: 'HomeController'
 	})
 	.state('index.framing', {
