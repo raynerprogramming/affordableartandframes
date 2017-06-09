@@ -4,27 +4,6 @@ var app = angular.module('app',['ui.router'])
 })
 .controller('RootController',function($scope,$state){
 	$scope.data='Root';
-	$scope.init = function(){
-		$(function () {
-			$('.raynerNavBar').sideNav();
-			$('.parallax').parallax();
-			$('.carousel.carousel-slider').each(function() {
-				var view = $(this);
-				var firstImage = view.find('.carousel-item img').first();
-				var imageHeight = firstImage[0].height;
-				if (imageHeight > 0) {
-					view.css('height', imageHeight);
-				}
-				else {
-				//	view.css('height', 400);
-			}
-		});
-			$('.carousel').carousel({full_width: true});
-		});
-	}
-	angular.element(document).ready(function () {
-		$scope.init();
-	});
 	//$state.go('home');
 })
 .controller('HomeController',function($scope){
