@@ -2,9 +2,8 @@ var app = angular.module('app',['ui.router'])
 .controller('framingController',function($scope){
 
 })
-.controller('RootController',function($scope){
+.controller('RootController',function($scope,$state){
 	$scope.data='Root';
-
 	$scope.init = function(){
 		$(function () {
 			$('.raynerNavBar').sideNav();
@@ -26,6 +25,7 @@ var app = angular.module('app',['ui.router'])
 	angular.element(document).ready(function () {
 		$scope.init();
 	});
+	$state.go('home');
 })
 .controller('HomeController',function($scope){
 	$scope.data='Home';
@@ -33,8 +33,8 @@ var app = angular.module('app',['ui.router'])
 
 app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider
-		.when("","/home")
-		.when("/","/home");
+	.when("","/index")
+	.when("/","/index");
 
 	$stateProvider
 	.state('app',{
@@ -42,7 +42,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 		templateUrl: 'index.html',
 		controller: "RootController"
 	})
-	.state('app.home', {
+	.state('home', {
 		url:"/home",
 		templateUrl: "templates/home.html",
 		controller: 'HomeController'
