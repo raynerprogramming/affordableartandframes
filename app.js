@@ -102,8 +102,7 @@ var app = angular.module('app',['ui.router'])
 		$scope.init();
 	});
 
-});
-
+})
 .controller('framingController',function($scope){
 	$scope.data='Home';
 
