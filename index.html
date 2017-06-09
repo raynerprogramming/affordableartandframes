@@ -11,70 +11,17 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="/affordableartandframes/js/materialize.js"></script>
   <script src="/affordableartandframes/js/angular.min.js"></script>
+  <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="/affordableartandframes/app.js"></script> 
   
 </head>
 
-<body ng-app="app" ng-controller="framingController">
-  <header></header>
-  <div class="parallax-container">
-    <div class="section">
-      <h1 class="header center grey-text text-lighten-4 maintitle">Affordable Art & Frames</h1>
-    </div>
-    <div class="parallax">
-      <img src="images/art.jpg">
-    </div>
-  </div>
-  <div class="container">
-    <div class="section">
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">store</i></h2>
-            <h5 class="center">About</h5>
-            <p class="light">About stuff</p>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Services</h5>
-            <div class="row">
-              <div class="col s12">
-                <div class="collection">
-                  <!--<a href="#!" class="collection-item">Art</a>-->
-                  <a href="framing.html" class="collection-item">Framing</a>
-                  <!--<a href="#!" class="collection-item">Printing</a>-->
-                </div>
-              </div>
-              <!-- <div class="col s6">
-                <div class="collection">
-                  <a href="#!" class="collection-item">Shadow Boxes</a>
-                  <a href="#!" class="collection-item">Stained Glass</a>
-                  <a href="#!" class="collection-item">Canvas</a>
-                </div>
-              </div>-->
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">local_phone</i></h2>
-            <h5 class="center">Contact</h5>
-            <p class="light">Contact stuff</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="parallax-container">
-    <div class="section">      
-    </div>
-    <div class="parallax">
-      <img src="/affordableartandframes/images/frames3.jpg">
-    </div>
-  </div>
-  <div ng-include="'footer.html'"></div>
+<header>
+  <div ui-view="header"></div>
+</header>
+<div ui-view="container">
+</div>
+<footer id="mainFooter" ui-view="footer">
+</footer>
 </body>
 </html>
