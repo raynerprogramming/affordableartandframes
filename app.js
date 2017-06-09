@@ -108,6 +108,7 @@ var app = angular.module('app',['ui.router'])
 app.config(['$stateProvider', function($stateProvider){
 	$stateProvider
 	.state('app',{
+		url:"",
 		templateUrl: 'index.html',
 		controller: 'RootController'
 	})
