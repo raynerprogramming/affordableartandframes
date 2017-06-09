@@ -110,9 +110,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 
 	$stateProvider
 	.state('app',{
-		url:"/index",
 		templateUrl: 'index.html',
-		controller: 'RootController'
 	})
 	.state('app.home', {
 		url:"/home",
