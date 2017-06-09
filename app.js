@@ -21,8 +21,8 @@ var app = angular.module('app',[])
 		});
 	}
 	angular.element(document).ready(function () {
-        $scope.init();
-    });
+		$scope.init();
+	});
 
 })
 .controller('footerCtrl',function($scope){
@@ -47,8 +47,8 @@ var app = angular.module('app',[])
 		});
 	}
 	angular.element(document).ready(function () {
-        $scope.init();
-    });
+		$scope.init();
+	});
 
 })
 .controller('framingController',function($scope){
@@ -73,40 +73,41 @@ var app = angular.module('app',[])
 		});
 	}
 	angular.element(document).ready(function () {
-        $scope.init();
-    });
+		$scope.init();
+	});
 
 });
 
 app.config(['$stateProvider', function($stateProvider){
-        $stateProvider
-        .state('root',{
-          url: '',
-          abstract: true,
-          views: {
-            'header': {
-              templateUrl: 'header.html',
-              controller: 'headerCtrl'
-            },
-            'footer':{
-              templateUrl: 'footer.html',
-              controller: 'footerCtrl'
-            }
-          }
-        })
-        .state('root.home', {
-          url: '/',
-          views: {
-            'container@': {
-              templateUrl: 'home.html'
-            }
-          }
-        })
-        .state('root.other', {
-          url: '/other',
-          views: {
-            'container@': {
-              templateUrl: 'other.html'
-            }
-          }
-        });   
+	$stateProvider
+	.state('root',{
+		url: '',
+		abstract: true,
+		views: {
+			'header': {
+				templateUrl: 'header.html',
+				controller: 'headerCtrl'
+			},
+			'footer':{
+				templateUrl: 'footer.html',
+				controller: 'footerCtrl'
+			}
+		}
+	})
+	.state('root.home', {
+		url: '/',
+		views: {
+			'container@': {
+				templateUrl: 'home.html'
+			}
+		}
+	})
+	.state('root.other', {
+		url: '/other',
+		views: {
+			'container@': {
+				templateUrl: 'other.html'
+			}
+		}
+	});   
+}]);
