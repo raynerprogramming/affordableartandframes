@@ -39,7 +39,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 	$stateProvider
 	.state('home', {
 		url:"/home",
-		templateUrl: "templates/test.html",
+		templateUrl: "templates/home.html",
 		controller: 'HomeController'
 	})
 	.state('framing', {
