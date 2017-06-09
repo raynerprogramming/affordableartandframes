@@ -24,6 +24,9 @@ var app = angular.module('app',['ui.router'])
 		$scope.init();
 	});
 })
+.controller('ContactController',function($scope){
+	$scope.data='Contact';
+})
 .controller('HomeController',function($scope){
 	$scope.data='Home';
 	$scope.init = function(){
