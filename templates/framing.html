@@ -1,55 +1,17 @@
 <div class="container">
   <div class="carousel hide-on-med-and-down carousel-slider center" data-indicators="true">
-    <div class="carousel-item white-text" href="#one!">
+    <div ng-repeat="slide in slides" class="carousel-item white-text" href="#one!">
       <div class="row">
         <div class="col s12 l9">
           <a href="#two!">
-            <img src="https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg"/>
+            <img src="{{slide.imgsrc}}"/>
           </a>
         </div>
         <div class="col s12 l3 maxcol">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title">Frame Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item white-text" href="#three!">
-        <div class="row">
-          <div class="col s12 l9">
-            <a href="#two!">
-              <img src="https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg"/>
-            </a>
-          </div>
-          <div class="col s12 l3 maxcol">
-            <div class="card blue-grey darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">Frame Title
-                </span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item white-text" href="#four!">
-        <div class="row">
-          <div class="col s12 l9">
-            <a href="#two!"><img src="https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg"/></a>
-          </div>
-          <div class="col s12 l3 maxcol">
-            <div class="card blue-grey darken-1">
-              <div class="card-content white-text">
-                <span class="card-title">Frame Title</span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                </p>
+              <span class="card-title">{{slide.title}}</span>
+              <p>{{slide.desc}}</p>
               </div>
             </div>
           </div>
