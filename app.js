@@ -14,7 +14,7 @@ var app = angular.module('app',['ui.router'])
 					view.css('height', imageHeight);
 				}
 				else {
-					view.css('height', 800);
+					view.css('height', 850);
 				}
 			});
 			$('.carousel').carousel({full_width: true});
