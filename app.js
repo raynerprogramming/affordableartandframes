@@ -53,4 +53,9 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 		templateUrl: "templates/framing.html",
 		controller: 'FramingController'
 	});   
+	.state('contact', {
+		url:"/contact",
+		templateUrl: "templates/contact.html",
+		controller: 'ContactController'
+	});   
 }]);
