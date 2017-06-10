@@ -2,28 +2,35 @@ var app = angular.module('app',['ui.router','slick'])
 //CONTROLLERS
 .controller('FramingController',function($scope,$window){
 	$scope.data='Framing';
-	$scope.slides = [{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
-	"title":"art2",
-	"desc":"desc2"
-	},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
-	"title":"framing1",
-	"desc":"desc1"
-	},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
-	"title":"framing3",
-	"desc":"desc3"
-	}];
-	$('.your-element').on('edge', function(event, slick, direction){
-  console.log('edge was hit')
+	$('#sidenav-overlay').trigger('click');
+	$scope.slides = [
+		{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
+		"title":"art2",
+		"desc":"desc2"
+		},
+		{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
+		"title":"framing1",
+		"desc":"desc1"
+		},
+		{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
+		"title":"framing3",
+		"desc":"desc3"
+		}
+	];
+
+$('.your-element').on('edge', function(event, slick, direction){
+	console.log('edge was hit')
 });
 })
 /**/
 .controller('ContactController',function($scope){
 	$scope.data='Contact';
-
 })
+
 .controller('HomeController',function($scope){
 	$scope.data='Home';
 	$scope.imgsrc = "images/frames3.jpg";
+	$('#sidenav-overlay').trigger('click');
 	$scope.init = function(){
 		$(function () {
 			$('.button-collapse').sideNav();
@@ -50,7 +57,6 @@ var app = angular.module('app',['ui.router','slick'])
 app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
 	$urlRouterProvider
 	.when("","/home");
-
 
 	$stateProvider
 	.state('home', {
