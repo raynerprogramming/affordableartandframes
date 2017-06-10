@@ -1,25 +1,29 @@
-var app = angular.module('app',['ui.router'])
+var app = angular.module('app',['ui.router','slick'])
 //CONTROLLERS
-.controller('FramingController',function($scope){
+.controller('FramingController',function($scope,$window){
 	$scope.data='Framing';
 	$scope.slides = [{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
 	"title":"art2",
 	"desc":"desc2"
-},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
-"title":"framing1",
-"desc":"desc1"
-},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
-"title":"framing3",
-"desc":"desc3"
-}];
+	},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
+	"title":"framing1",
+	"desc":"desc1"
+	},{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
+	"title":"framing3",
+	"desc":"desc3"
+	}];
+	$('.your-element').on('edge', function(event, slick, direction){
+  console.log('edge was hit')
+});
 })
+/**/
 .controller('ContactController',function($scope){
 	$scope.data='Contact';
 
 })
 .controller('HomeController',function($scope){
 	$scope.data='Home';
-		$scope.imgsrc = "images/frames3.jpg";
+	$scope.imgsrc = "images/frames3.jpg";
 	$scope.init = function(){
 		$(function () {
 			$('.button-collapse').sideNav();
@@ -31,25 +35,16 @@ var app = angular.module('app',['ui.router'])
 	});
 })
 //DIRECTIVES
-.directive('myPostRepeatDirective', function() {
-  return function(scope, element, attrs) {
-    if (scope.$last){
-      // iteration is complete, do whatever post-processing
-      // is necessary
-      $('.carousel.carousel-slider').each(function() {
-			var view = $(this);
-			var firstImage = view.find('.carousel-item img').first();
-			var imageHeight = firstImage[0] ? firstImage[0].height : 850;
-			if (imageHeight > 0) {
-				view.css('height', imageHeight);
+.directive('myPostRepeatDirective', function($window) {
+	return {
+		restrict: 'EA',
+		link:function(scope, element, attrs) 
+		{
+			if (scope.$last){
+				//$('.matchHeight').matchHeight();
 			}
-			else {
-				view.css('height', 850);
-			}
-		});
-		$('.carousel').carousel({full_width: true});
-    }
-  };
+		}
+	};
 });
 //STATE CONFIG
 app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
@@ -65,7 +60,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 	})
 	.state('framing', {
 		url:"/framing",
-		templateUrl: "templates/framing.html",
+		templateUrl: "templates/framing-slick.html",
 		controller: 'FramingController'
 	})
 	.state('contact', {

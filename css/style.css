@@ -55,3 +55,24 @@
  	height:900px !important;
 
  }
+ .slickimg{
+ 	width:100%;
+ }
+
+ .slick-slide .row{
+ 	margin:0;
+ }
+ .nopad{
+ 	padding:0;
+ }
+ .slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: black !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
