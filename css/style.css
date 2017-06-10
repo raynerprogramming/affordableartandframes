@@ -76,3 +76,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.slick-track{
+	margin-top:10px;
+}
