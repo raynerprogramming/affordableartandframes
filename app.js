@@ -60,7 +60,7 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 	})
 	.state('framing', {
 		url:"/framing",
-		templateUrl: "templates/framing-slick.html",
+		templateUrl: "templates/framing.html",
 		controller: 'FramingController'
 	})
 	.state('contact', {
