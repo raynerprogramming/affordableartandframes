@@ -48,7 +48,31 @@ var app = angular.module('app',['ui.router','slick'])
 	"desc":"Shadow Box"}
 	];
 })
+.controller('PrintingController',function($scope,$window){
+	$scope.data='Framing';
+	$('#sidenav-overlay').trigger('click');
+	$scope.slides = [
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
+	"title":"Canvas 1",
+	"desc":"Canvas"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
+	"title":"Canvas 2",
+	"desc":"Canvas"}
+	];
+})
 .controller('CanvasController',function($scope,$window){
+	$scope.data='Framing';
+	$('#sidenav-overlay').trigger('click');
+	$scope.slides = [
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
+	"title":"Canvas 1",
+	"desc":"Canvas"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
+	"title":"Canvas 2",
+	"desc":"Canvas"}
+	];
+})
+.controller('MemorabiliaController',function($scope,$window){
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
@@ -107,10 +131,25 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 		templateUrl: "templates/framing.html",
 		controller: 'FramingController'
 	})
-	.state('framing', {
+	.state('shadow', {
 		url:"/shadowbox",
 		templateUrl: "templates/framing.html",
 		controller: 'ShadowController'
+	})
+	.state('printing', {
+		url:"/printing",
+		templateUrl: "templates/framing.html",
+		controller: 'PrintingController'
+	})
+	.state('canvas', {
+		url:"/canvas",
+		templateUrl: "templates/framing.html",
+		controller: 'CanvasController'
+	})
+	.state('memorabilia', {
+		url:"/memorabilia",
+		templateUrl: "templates/framing.html",
+		controller: 'MemorabiliaController'
 	})
 	.state('contact', {
 		url:"/contact",
