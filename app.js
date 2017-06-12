@@ -91,7 +91,8 @@ var app = angular.module('app',['ui.router','slick'])
 
 .controller('HomeController',function($scope){
 	$scope.data='Home';
-	$scope.imgsrc = "images/frames3.jpg";
+	$scope.imgsrc1 = "images/champwallart.jpg";
+	$scope.imgsrc2 = "images/frames3.jpg";
 	$('#sidenav-overlay').trigger('click');
 	$scope.init = function(){
 		$(function () {
