@@ -4,30 +4,60 @@ var app = angular.module('app',['ui.router','slick'])
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
-	"title":"art2",
-	"desc":"desc2"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing2.jpg",
+	"title":"Champ's Art",
+	"desc":"Champ's Art"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
 	"title":"framing1",
 	"desc":"desc1"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing1.jpg",
+	"title":"Champ's Art",
+	"desc":"Champ's Art"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing2.jpg",
+	"title":"framing2",
+	"desc":"desc2"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
 	"title":"framing3",
-	"desc":"desc3"}
+	"desc":"desc3"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing5.jpg",
+	"title":"framing5",
+	"desc":"desc5"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing6.jpg",
+	"title":"framing6",
+	"desc":"desc6"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing7.jpg",
+	"title":"framing7",
+	"desc":"desc7"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing1.jpg",
+	"title":"Jersey",
+	"desc":"Jersey"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
+	"title":"art2",
+	"desc":"desc2"}
 	];
 })
 .controller('ShadowController',function($scope,$window){
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
-	"title":"art2",
-	"desc":"desc2"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
-	"title":"framing1",
-	"desc":"desc1"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
-	"title":"framing3",
-	"desc":"desc3"}
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/shadowbox1.jpg",
+	"title":"Shadow Box 1",
+	"desc":"Shadow Box"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/shadowbox2.jpg",
+	"title":"Shadow Box 2",
+	"desc":"Shadow Box"}
+	];
+})
+.controller('CanvasController',function($scope,$window){
+	$scope.data='Framing';
+	$('#sidenav-overlay').trigger('click');
+	$scope.slides = [
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
+	"title":"Canvas 1",
+	"desc":"Canvas"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
+	"title":"Canvas 2",
+	"desc":"Canvas"}
 	];
 })
 /**/
@@ -76,6 +106,11 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlR
 		url:"/framing",
 		templateUrl: "templates/framing.html",
 		controller: 'FramingController'
+	})
+	.state('framing', {
+		url:"/shadowbox",
+		templateUrl: "templates/framing.html",
+		controller: 'ShadowController'
 	})
 	.state('contact', {
 		url:"/contact",
