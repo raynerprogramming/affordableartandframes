@@ -101,3 +101,7 @@
  	image-rendering: crisp-edges;
  	-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
  }
+ .homecontainer{
+ 	width:80%;
+ 	max-width:80%;
+ }
