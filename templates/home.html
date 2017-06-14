@@ -3,23 +3,23 @@
     <h1 class="header center grey-text text-lighten-4 maintitle">Affordable Art & Frames</h1>
   </div>
   <div class="parallax">
-    <img class="responsive-img" ng-src="{{imgsrc1}}">
+    <img ng-src="{{imgsrc1}}">
   </div>
 </div>
 <div class="container homecontainer">
   <div class="section">
     <!--   Icon Section   -->
-    <div class="row">
+    <div class="row nomargin">
       <div class="col s12 m3 flexcol">
         <div class="valign-wrapper">
-        <img class="circle responsive-img" src="images/burlesons-resize.jpg">
+        <img class="circle ownerimg responsive-img" src="images/burlesons-resize.jpg">
         </div>
       </div>
       <div class="col s12 m6">
         <div class="icon-block">
           <h2 class="center brown-text"><i class="material-icons">store</i></h2>
           <h5 class="center">About</h5>
-          <p class="light">Affordable Art & Frame has been family owned and operated since it was established in 1995.  We offer professional advice on custom framing and excellent customer service.  We provide custom framing below Hobby store sale prices and guarantee satisfaction.  We can do it all, you name it, we frame it!</p>
+          <p class="light abouttext">Affordable Art & Frame has been family owned and operated since it was established in 1995.  We offer professional advice on custom framing and excellent customer service.  We provide custom framing below Hobby store sale prices and guarantee satisfaction.  We can do it all, you name it, we frame it!</p>
         </div>
       </div>
       <div class="col s12 m3">
@@ -27,12 +27,16 @@
           <h2 class="center brown-text"><i class="material-icons">group</i></h2>
           <h5 class="center">Services</h5>
           <div class="row">
-            <div class="col s12">
+            <div class="col s12 m6">
               <div class="collection">
                 <!--<a href="#!" class="collection-item">Art</a>-->
                 <a ui-sref="framing"  class="collection-item">Framing</a>
                 <a ui-sref="printing"  class="collection-item">Printing</a>
                 <a ui-sref="shadow"  class="collection-item">Shadow Boxes</a>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="collection">
                 <a ui-sref="canvas"  class="collection-item">Canvas</a>
                 <a ui-sref="memorabilia"  class="collection-item">Memorabilia</a>
               </div>
@@ -48,13 +52,5 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="parallax-container">
-    <div class="section">      
-    </div>
-    <div class="parallax">
-      <img class="responsive-img" ng-src="{{imgsrc2}}">
     </div>
   </div>
