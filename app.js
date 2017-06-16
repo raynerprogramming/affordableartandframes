@@ -4,13 +4,13 @@ var app = angular.module('app',['ui.router','slick'])
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing2.jpg",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing2.JPG",
 	"title":"Champ's Art",
 	"desc":"Champ's Art"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
 	"title":"framing1",
 	"desc":"desc1"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing1.jpg",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing1.JPG",
 	"title":"Champ's Art",
 	"desc":"Champ's Art"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing2.jpg",
@@ -19,16 +19,13 @@ var app = angular.module('app',['ui.router','slick'])
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
 	"title":"framing3",
 	"desc":"desc3"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing5.jpg",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing5.JPG",
 	"title":"framing5",
 	"desc":"desc5"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing6.jpg",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing6.JPG",
 	"title":"framing6",
 	"desc":"desc6"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing7.jpg",
-	"title":"framing7",
-	"desc":"desc7"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing1.jpg",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing1.JPG",
 	"title":"Jersey",
 	"desc":"Jersey"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
@@ -40,48 +37,52 @@ var app = angular.module('app',['ui.router','slick'])
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/shadowbox1.jpg",
-	"title":"Shadow Box 1",
-	"desc":"Shadow Box"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/shadowbox2.jpg",
 	"title":"Shadow Box 2",
-	"desc":"Shadow Box"}
+	"desc":"Shadow Box"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/shadowbox1.jpg",
+	"title":"Shadow Box 1",
+	"desc":"Shadow Box"}	
 	];
 })
 .controller('PrintingController',function($scope,$window){
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
-	"title":"Canvas 1",
-	"desc":"Canvas"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
-	"title":"Canvas 2",
-	"desc":"Canvas"}
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/printing2.jpg",
+	"title":"Printing 2",
+	"desc":"Printing"}
 	];
 })
 .controller('CanvasController',function($scope,$window){
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
-	"title":"Canvas 1",
-	"desc":"Canvas"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
 	"title":"Canvas 2",
+	"desc":"Canvas"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
+	"title":"Canvas 1",
 	"desc":"Canvas"}
+	
 	];
 })
 .controller('MemorabiliaController',function($scope,$window){
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
-	"title":"Canvas 1",
-	"desc":"Canvas"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
-	"title":"Canvas 2",
-	"desc":"Canvas"}
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing2.jpg",
+	"title":"Memorabilia",
+	"desc":"Memorabilia"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing1.jpg",
+	"title":"Memorabilia",
+	"desc":"Memorabilia"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing2.jpg",
+	"title":"Memorabilia",
+	"desc":"Memorabilia"},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/teamframing.JPG",
+	"title":"Memorabilia",
+	"desc":"Memorabilia"}
 	];
 })
 /**/
