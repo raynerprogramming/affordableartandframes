@@ -4,13 +4,13 @@ var app = angular.module('app',['ui.router','slick'])
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing2.JPG",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing2.jpg",
 	"title":"Champ's Art",
 	"desc":"Champ's Art"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
 	"title":"framing1",
 	"desc":"desc1"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing1.JPG",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing1.jpg",
 	"title":"Champ's Art",
 	"desc":"Champ's Art"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing2.jpg",
@@ -19,13 +19,13 @@ var app = angular.module('app',['ui.router','slick'])
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
 	"title":"framing3",
 	"desc":"desc3"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing5.JPG",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing5.jpg",
 	"title":"framing5",
 	"desc":"desc5"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing6.JPG",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing6.jpg",
 	"title":"framing6",
 	"desc":"desc6"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing1.JPG",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing1.jpg",
 	"title":"Jersey",
 	"desc":"Jersey"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
@@ -80,7 +80,7 @@ var app = angular.module('app',['ui.router','slick'])
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing2.jpg",
 	"title":"Memorabilia",
 	"desc":"Memorabilia"},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/teamframing.JPG",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/teamframing.jpg",
 	"title":"Memorabilia",
 	"desc":"Memorabilia"}
 	];
