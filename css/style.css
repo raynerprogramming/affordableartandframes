@@ -123,6 +123,17 @@
  	font-weight:400;
  	text-indent: 5rem;
  }
-.slick-track .slickimg {
-	max-height:800px;
+ .slick-track .slickimg {
+ 	max-height:800px;
+ }
+ .page-footer{
+ 	padding-bottom: 20px;
+ }
+ .collection a.collection-item {
+ 	color: #795548;
+ 	font-weight: 500;
+ }
+ .dropdown-content li > a, .dropdown-content li > span {
+    color: #795548;
+    font-weight: 500;
 }
