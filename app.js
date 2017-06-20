@@ -30,6 +30,8 @@ var app = angular.module('app',['ui.router','slick'])
 	"title":"Uncle Wally",
 	"descs":["$275","Original acrylic","By local artist Jennifer Jones"]}
 	];
+	$scope.imgsrc = "images/champwallart2-resize.jpg";
+	$scope.pageinfo="Custom framing can make all the difference.  All our frames are hand made and cut to order.  We have glass types to fit any need.  Over 1000 framing samples to choose from and all of our frames come included with installation hardware."
 	/*
 	Framing, matting, dry mount, include installation hardware, custom dimension, hand made, cut to order, clear glass, non glare, UV clear (preservation), UV non glare, museum glass, true view white glass,
 	mirrors, cross stitching, over 1000 frame samples in store to choose from.
@@ -47,6 +49,7 @@ var app = angular.module('app',['ui.router','slick'])
 	"title":"Shadow Boxes",
 	"descs":["You name it, we can shadow box it:","Beatle Dolls", "Violins", "graduation memoribilia"]}	
 	];
+	$scope.imgsrc = "images/champwallart2-resize.jpg";
 	/*
 	wedding dress, intstruments, you name it we, shadow box it.
 	*/
@@ -60,6 +63,7 @@ var app = angular.module('app',['ui.router','slick'])
 	"title":"Large Format Printer(EPSON 9900)",
 	"descs":["We can print on canvas, watercolor paper, photo paper and metallic photo paper","Large format printing up to 44 inches by 6 feet","We also print giclees for local artists"," Have your photo turned into a work of art","Photo restoration."]}
 	];
+	$scope.imgsrc = "images/champwallart2-resize.jpg";
 	/*
 
 	*/
@@ -75,6 +79,8 @@ var app = angular.module('app',['ui.router','slick'])
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
 	"title":"Family Canvas",
 	"descs":["Hand stretched family portrait","Perfect for any occasion."]}
+	];
+
 	/*
 
 	email,
@@ -88,7 +94,8 @@ var app = angular.module('app',['ui.router','slick'])
 
 	*/
 	
-	];
+	
+	$scope.imgsrc = "images/champwallart2-resize.jpg";
 })
 .controller('MemorabiliaController',function($scope,$window){
 	$('.parallax').parallax();
