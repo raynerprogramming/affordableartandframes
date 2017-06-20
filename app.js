@@ -1,33 +1,34 @@
 var app = angular.module('app',['ui.router','slick'])
 //CONTROLLERS
 .controller('FramingController',function($scope,$window){
+	$('.parallax').parallax();
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing2.jpg",
 	"title":"Octopus Garden",
-	"desc":"Original alcohol ink abstract By Champ Burleson $200"},
+	"descs":["$200","Alcohol Ink","Abstract","Artist:  Champ Burleson","Black matte frames"]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
 	"title":"Casafina",
-	"desc":"Textured print by Roger Duvall"},
+	"descs":["Textured print","Artist:  Roger Duvall"]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing1.jpg",
 	"title":"Pinwheels",
-	"desc":"Original Alcohol ink By Champ Burleson $300"},
+	"descs":["$300","Alcohol Ink", "Artist: Champ Burleson"]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing2.jpg",
 	"title":"Shadowboxed Medals",
-	"desc":""},
+	"descs":[]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing3.jpg",
 	"title":"Hand Painted Liner",
-	"desc":"Hand painted red and yellow liner to enhance print."},
+	"descs":["Custom Hand painted red and yellow liner to enhance print."]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing5.jpg",
 	"title":"Floated Abstract",
-	"desc":""},
+	"descs":[]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing1.jpg",
 	"title":"Shadow Boxed Jersey",
-	"desc":""},
+	"descs":[]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
 	"title":"Uncle Wally",
-	"desc":"Original acrylic by local artist Jennifer Jones $275"}
+	"descs":["$275","Original acrylic","By local artist Jennifer Jones"]}
 	];
 	/*
 	Framing, matting, dry mount, include installation hardware, custom dimension, hand made, cut to order, clear glass, non glare, UV clear (preservation), UV non glare, museum glass, true view white glass,
@@ -35,42 +36,45 @@ var app = angular.module('app',['ui.router','slick'])
 	*/
 })
 .controller('ShadowController',function($scope,$window){
+	$('.parallax').parallax();
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/shadowbox2.jpg",
 	"title":"Shadow Box Computer Motherboard",
-	"desc":""},
+	"descs":[]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/shadowbox1.jpg",
 	"title":"Shadow Boxes",
-	"desc":"Beatle Dolls, Violins, graduation memoribilia.  You name it, we can shadow box it."}	
+	"descs":["You name it, we can shadow box it:","Beatle Dolls", "Violins", "graduation memoribilia"]}	
 	];
 	/*
 	wedding dress, intstruments, you name it we, shadow box it.
 	*/
 })
 .controller('PrintingController',function($scope,$window){
+	$('.parallax').parallax();
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/printing2.jpg",
 	"title":"Large Format Printer(EPSON 9900)",
-	"desc":"We can print on canvas, watercolor paper, photo paper and metallic photo paper.  Large format printing up to 44 inches by 6 feet.  We also print giclees for local artists.  Have your photo turned into a work of art.  Photo restoration."}
+	"descs":["We can print on canvas, watercolor paper, photo paper and metallic photo paper","Large format printing up to 44 inches by 6 feet","We also print giclees for local artists"," Have your photo turned into a work of art","Photo restoration."]}
 	];
 	/*
 
 	*/
 })
 .controller('CanvasController',function($scope,$window){
+	$('.parallax').parallax();
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas-bridge.jpg",
 	"title":"Canvas Bridge",
-	"desc":"18x27 hand streched giclees canvas"},
+	"descs":["18x27","Hand streched giclees canvas"]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
 	"title":"Family Canvas",
-	"desc":"Hand stretched family portrait.  Perfect for any occasion."}
+	"descs":["Hand stretched family portrait","Perfect for any occasion."]}
 	/*
 
 	email,
@@ -87,19 +91,22 @@ var app = angular.module('app',['ui.router','slick'])
 	];
 })
 .controller('MemorabiliaController',function($scope,$window){
+	$('.parallax').parallax();
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing2.jpg",
-	"title":"Memorabilia",
-	"desc":"Memorabilia"},
+	"title":"Shadowboxed Medals",
+	"descs":[]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/jerseyframing1.jpg",
-	"title":"Memorabilia",
-	"desc":"Memorabilia"},
+	"title":"Shadow Boxed Jersey",
+	"descs":[]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/teamframing.jpg",
 	"title":"Manchester United Team Signatures",
-	"desc":""}
+	"descs":[]}
 	];
+	$scope.imgsrc = "images/champwallart2-resize.jpg";
+	$scope.pageinfo="Frame your memories, so they last forever.  We offer UV glass for convservation purposes."
 	/*
 	Frame your memories, so the last forever.  Offer UV glass.  Conversation pieces
 	*/
