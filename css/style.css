@@ -180,10 +180,16 @@
   .parallax img {
     max-height: 170%; /* or a little bit higher */
   }
+   .framingparallax{
+ 	max-height:500px;
+ }
 }
 
 @media only screen and (min-width: 993px) {
   .parallax img {
     max-height: 350%; /* or higher percentages. It's up to your taste */
   }
+   .framingparallax{
+ 	max-height:300px;
+ }
 }
