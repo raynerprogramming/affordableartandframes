@@ -30,8 +30,8 @@ var app = angular.module('app',['ui.router','slick'])
 	"title":"Uncle Wally",
 	"descs":["$275","Original acrylic","By local artist Jennifer Jones"]}
 	];
-	$scope.imgsrc = "images/champwallart2-resize.jpg";
-	$scope.pageinfo="Custom framing can make all the difference.  All our frames are hand made and cut to order.  We have glass types to fit any need.  Over 1000 framing samples to choose from and all of our frames come included with installation hardware."
+	$scope.imgsrc = "images/background-frames2.jpg";
+	$scope.pageinfo="Custom framing can make all the difference.  All our frames are hand made and cut to order.  We have glass types to fit any need.  Over 1000 framing samples to choose from."
 	/*
 	Framing, matting, dry mount, include installation hardware, custom dimension, hand made, cut to order, clear glass, non glare, UV clear (preservation), UV non glare, museum glass, true view white glass,
 	mirrors, cross stitching, over 1000 frame samples in store to choose from.
@@ -76,7 +76,7 @@ var app = angular.module('app',['ui.router','slick'])
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas-bridge.jpg",
 	"title":"Canvas Bridge",
 	"descs":["18x27","Hand streched giclees canvas"]},
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas1.jpg",
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
 	"title":"Family Canvas",
 	"descs":["Hand stretched family portrait","Perfect for any occasion."]}
 	];
