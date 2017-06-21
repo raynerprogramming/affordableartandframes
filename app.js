@@ -121,6 +121,7 @@ var app = angular.module('app',['ui.router','slick'])
 /**/
 .controller('ContactController',function($scope){
 	$scope.data='Contact';
+	$('#sidenav-overlay').trigger('click');
 })
 
 .controller('HomeController',function($scope){
