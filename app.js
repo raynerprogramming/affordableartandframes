@@ -7,13 +7,15 @@ var app = angular.module('app',['ui.router','slick'])
 	$scope.slides = [
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing2.jpg",
 	"title":"Octopus Garden",
-	"descs":["$200","Alcohol Ink","Abstract","Artist:  Champ Burleson","Black matte frames"]},
+	"descs":["Alcohol Ink","Abstract","Artist:  Champ Burleson","Black matte frames"],
+	"price":"$200"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing1.jpg",
 	"title":"Casafina",
 	"descs":["Textured print","Artist:  Roger Duvall"]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing1.jpg",
 	"title":"Pinwheels",
-	"descs":["$300","Alcohol Ink", "Artist: Champ Burleson"]},
+	"descs":["Alcohol Ink", "Artist: Champ Burleson"],
+	"price":"$300"},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/framing2.jpg",
 	"title":"Shadowboxed Medals",
 	"descs":[]},
@@ -75,9 +77,6 @@ var app = angular.module('app',['ui.router','slick'])
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
-	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas-bridge.jpg",
-	"title":"Canvas Bridge",
-	"descs":["18x27","Hand stretched giclees canvas"]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
 	"title":"Family Canvas",
 	"descs":["Hand stretched family portrait","Perfect for any occasion."]}

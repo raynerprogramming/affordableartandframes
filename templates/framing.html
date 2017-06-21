@@ -6,10 +6,10 @@
           <img class="slickimg center-align" ng-src="{{slide.imgsrc}}"/>
         </div>
         <div class="col s12 m4 l3 flexcol">
-          <div class="card blue-grey darken-3">
+          <div class="card blue-grey darken-1">
             <div class="card-content white-text">
               <span class="card-title slidetitle">{{slide.title}}</span>
-              <div ng-if="slide.price" class="btn-floating btn-large grey darken-1 slideprice">{{slide.price}}</div>
+              <div ng-if="slide.price" class="btn-floating btn-large grey darken-3 slideprice">{{slide.price}}</div>
               
               <ul class="framingdesclist" >
                 <li ng-repeat="desc in slide.descs">{{desc}}</li>
