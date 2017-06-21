@@ -75,7 +75,7 @@ var app = angular.module('app',['ui.router','slick'])
 	$scope.slides = [
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas-bridge.jpg",
 	"title":"Canvas Bridge",
-	"descs":["18x27","Hand streched giclees canvas"]},
+	"descs":["18x27","Hand stretched giclees canvas"]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/canvas2.jpg",
 	"title":"Family Canvas",
 	"descs":["Hand stretched family portrait","Perfect for any occasion."]}
