@@ -14,9 +14,9 @@
               </div>
               
               <ul class="framingdesclist" >
-                <li ng-repeat="desc in slide.descs"><i class="tiny material-icons"></i> {{desc}}</li>
+                <li ng-repeat="desc in slide.descs">{{desc}}</li>
+                <li ng-if="slide.artistSite"><a href="{{slide.artistSite}}">Artist's Website</a> {{desc}}</li>
               </ul>
-              <span ng-if="slide.artistSite" class="slidelink"><a href="{{slide.artistSite}}">Artist's Website</a></span>
             </div>
           </div>
         </div>
