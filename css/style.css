@@ -164,6 +164,16 @@
  	padding: 0;
  	margin: 0;
  }
+ .slidelink{
+ 	padding: 0;
+ 	margin: 0;
+ 	padding-left: 1em; 
+ 	text-indent: -.7em;
+ }
+ .slidelink a::before {
+ 	content: "• ";
+ 	color:"white";
+ }
  .framingparallax{
  	max-height:300px;
  }
@@ -176,20 +186,20 @@
  	padding-top: 100px;
  	text-shadow: 2px 2px 2px rgba(0,0,0,1);
  }
-@media only screen and (max-width : 992px) {
-  .parallax img {
-    max-height: 170%; /* or a little bit higher */
-  }
-   .framingparallax{
- 	max-height:500px;
+ @media only screen and (max-width : 992px) {
+ 	.parallax img {
+ 		max-height: 170%; /* or a little bit higher */
+ 	}
+ 	.framingparallax{
+ 		max-height:500px;
+ 	}
  }
-}
 
-@media only screen and (min-width: 993px) {
-  .parallax img {
-    max-height: 350%; /* or higher percentages. It's up to your taste */
-  }
-   .framingparallax{
- 	max-height:300px;
+ @media only screen and (min-width: 993px) {
+ 	.parallax img {
+ 		max-height: 350%; /* or higher percentages. It's up to your taste */
+ 	}
+ 	.framingparallax{
+ 		max-height:300px;
+ 	}
  }
-}

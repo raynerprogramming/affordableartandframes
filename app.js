@@ -28,7 +28,9 @@ var app = angular.module('app',['ui.router','slick'])
 	"descs":[]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/art2.jpg",
 	"title":"Uncle Wally",
-	"descs":["$275","Original acrylic","By local artist Jennifer Jones"]}
+	"descs":["Original acrylic","By local artist Jennifer Jones"],
+	"price":"$275",
+	"artistSite":"https://www.the3rdflamingo.com/"}
 	];
 	$scope.imgsrc = "images/background-frames2.jpg";
 	$scope.pageinfo="Custom framing can make all the difference.  All our frames are hand made and cut to order.  We have over 1000 framing samples to choose from and glass types to fit any need."
