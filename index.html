@@ -22,26 +22,26 @@
           <li><a ui-sref="contact">Contact Us</a></li>    
         </ul>
         <ul id="nav-mobile" class="side-nav">
-          <li><a ui-sref="home">Home</a></li>        
+          <li><a ui-sref="home" ui-sref-opts="{reload: true}">Home</a></li>        
           <li class="divider"></li>
-          <li><a ui-sref="contact">Contact us</a></li>        
+          <li><a ui-sref="contact" ui-sref-opts="{reload: true}">Contact us</a></li>        
+          <li class="divider" ></li>
+          <li><a ui-sref="framing" ui-sref-opts="{reload: true}">Framing</a></li>
           <li class="divider"></li>
-          <li><a ui-sref="framing" >Framing</a></li>
+          <li><a ui-sref="printing" ui-sref-opts="{reload: true}">Printing</a></li>
           <li class="divider"></li>
-          <li><a ui-sref="printing">Printing</a></li>
+          <li><a ui-sref="shadow" ui-sref-opts="{reload: true}">Shadow Boxes</a></li>
           <li class="divider"></li>
-          <li><a ui-sref="shadow">Shadow Boxes</a></li>
+          <li><a ui-sref="canvas" ui-sref-opts="{reload: true}">Canvas</a></li>
           <li class="divider"></li>
-          <li><a ui-sref="canvas">Canvas</a></li>
-          <li class="divider"></li>
-          <li><a ui-sref="memorabilia">Memorabilia</a></li>
+          <li><a ui-sref="memorabilia" ui-sref-opts="{reload: true}">Memorabilia</a></li>
           <li class="divider"></li>        
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
     <!-- Dropdown Structure -->
     <ul id="srvDropdown" class="dropdown-content">
-      <li><a ui-sref="framing" >Framing</a></li>
+      <li><a ui-sref="framing">Framing</a></li>
       <li><a ui-sref="printing">Printing</a></li>
       <li><a ui-sref="shadow">Shadow Boxes</a></li>
       <li><a ui-sref="canvas">Canvas</a></li>
