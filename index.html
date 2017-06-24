@@ -6,12 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Affordable Art & Frames - Custom Frames, Prints and Art in OKC</title>
   <!-- CSS  -->     
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
-  <link rel="stylesheet" href="css/flexboxgrid.css">
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body ng-app="app">
   <header>
@@ -37,53 +31,58 @@
           <li class="divider"></li>
           <li><a ui-sref="memorabilia" ui-sref-opts="{reload: true}">Memorabilia</a></li>
           <li class="divider"></li>        
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+      <!-- Dropdown Structure -->
+      <ul id="srvDropdown" class="dropdown-content">
+        <li><a ui-sref="framing">Framing</a></li>
+        <li><a ui-sref="printing">Printing</a></li>
+        <li><a ui-sref="shadow">Shadow Boxes</a></li>
+        <li><a ui-sref="canvas">Canvas</a></li>
+        <li><a ui-sref="memorabilia">Memorabilia</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-    <!-- Dropdown Structure -->
-    <ul id="srvDropdown" class="dropdown-content">
-      <li><a ui-sref="framing">Framing</a></li>
-      <li><a ui-sref="printing">Printing</a></li>
-      <li><a ui-sref="shadow">Shadow Boxes</a></li>
-      <li><a ui-sref="canvas">Canvas</a></li>
-      <li><a ui-sref="memorabilia">Memorabilia</a></li>
-    </ul>
-  </nav>
-</header>
-<div ui-view>
-</div>
-<footer class="page-footer grey darken-3">
- <div class="container">
-  <div class="row nomargin">
-    <div class="col l3 hide-on-med-and-down">
-      <img class="footerlogo" src="images/aaf1-min.png"></img>    
-    </div>
-    <div class="col l6 s12">
-      <p class="motto white-text">"You name it, we frame it.  We do it better and we do it for less."</h5>
-        <h5 class="white-text right">-Champ & Barbara Burleson</h5>
-        <p class="grey-text text-lighten-4"></p>
+    </nav>
+  </header>
+  <div ui-view>
+  </div>
+  <footer class="page-footer grey darken-3">
+   <div class="container">
+    <div class="row nomargin">
+      <div class="col l3 hide-on-med-and-down">
+        <img class="footerlogo" src="images/aaf1-min.png"></img>    
+      </div>
+      <div class="col l6 s12">
+        <p class="motto white-text">"You name it, we frame it.  We do it better and we do it for less."</h5>
+          <h5 class="white-text right">-Champ & Barbara Burleson</h5>
+          <p class="grey-text text-lighten-4"></p>
+        </div>
+        <div class="col l1"></div>
+        <div class="col l2 hide-on-med-and-down">
+          <h5 class="white-text ">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.facebook.com/Affordable-Art-Frames-121020751306231/" target="_blank">FaceBook</a></li>
+            <li><a class="white-text" href="https://www.google.com/maps/place/Affordable+Art+%26+Frame/@35.5524708,-97.6398992,17z/data=!3m1!4b1!4m5!3m4!1s0x87b204e93f77aa13:0xabe2243da60f3b7d!8m2!3d35.5524708!4d-97.6377105" target="_blank">Google Maps</a></li>
+            <li><a class="white-text" href="mailto:burlesons@affordableartandframes.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="col s12 hide-on-large-only">
+          <h5 class="white-text ">Connect</h5>
+          <div class="col s4"><a class="white-text" href="https://www.facebook.com/Affordable-Art-Frames-121020751306231/" target="_blank">FaceBook</a></div>
+          <div class="col s4"><a class="white-text" href="https://www.google.com/maps/place/Affordable+Art+%26+Frame/@35.5524708,-97.6398992,17z/data=!3m1!4b1!4m5!3m4!1s0x87b204e93f77aa13:0xabe2243da60f3b7d!8m2!3d35.5524708!4d-97.6377105" target="_blank">Google Maps</a></div>
+          <div class="col s4"><a class="white-text" href="mailto:burlesons@affordableartandframes.com">Email</a></div>
+        </div>
       </div>
       <div class="col l1"></div>
-      <div class="col l2 hide-on-med-and-down">
-        <h5 class="white-text ">Connect</h5>
-        <ul>
-          <li><a class="white-text" href="https://www.facebook.com/Affordable-Art-Frames-121020751306231/" target="_blank">FaceBook</a></li>
-          <li><a class="white-text" href="https://www.google.com/maps/place/Affordable+Art+%26+Frame/@35.5524708,-97.6398992,17z/data=!3m1!4b1!4m5!3m4!1s0x87b204e93f77aa13:0xabe2243da60f3b7d!8m2!3d35.5524708!4d-97.6377105" target="_blank">Google Maps</a></li>
-          <li><a class="white-text" href="mailto:burlesons@affordableartandframes.com">Email</a></li>
-        </ul>
-      </div>
-      <div class="col s12 hide-on-large-only">
-        <h5 class="white-text ">Connect</h5>
-        <div class="col s4"><a class="white-text" href="https://www.facebook.com/Affordable-Art-Frames-121020751306231/" target="_blank">FaceBook</a></div>
-        <div class="col s4"><a class="white-text" href="https://www.google.com/maps/place/Affordable+Art+%26+Frame/@35.5524708,-97.6398992,17z/data=!3m1!4b1!4m5!3m4!1s0x87b204e93f77aa13:0xabe2243da60f3b7d!8m2!3d35.5524708!4d-97.6377105" target="_blank">Google Maps</a></div>
-        <div class="col s4"><a class="white-text" href="mailto:burlesons@affordableartandframes.com">Email</a></div>
-      </div>
     </div>
-    <div class="col l1"></div>
   </div>
-</div>
 </footer>
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="bower_components/slick-carousel/slick/slick-theme.css">
+<link rel="stylesheet" href="css/flexboxgrid.css">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/angular.min.js"></script>
@@ -94,8 +93,8 @@
 <script src="app.js"></script> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-101511843-1', 'auto');
