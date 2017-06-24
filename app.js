@@ -112,7 +112,7 @@ var app = angular.module('app',['ui.router','slick'])
 	"title":"Manchester United Team Signatures",
 	"descs":[]}
 	];
-	$scope.imgsrc = "images/champwallart2-resize.jpg";
+	$scope.imgsrc = "images/champwallart2-resize-min.jpg";
 	$scope.pageinfo="Frame your memories, so they last forever.  We offer UV glass for convservation purposes."
 	/*
 	Frame your memories, so the last forever.  Offer UV glass.  Conversation pieces
@@ -126,8 +126,8 @@ var app = angular.module('app',['ui.router','slick'])
 
 .controller('HomeController',function($scope){
 	$scope.data='Home';
-	$scope.imgsrc1 = "images/champwallart2-resize.jpg";
-	$scope.imgsrc2 = "images/background-frames2-resize.jpg";
+	$scope.imgsrc1 = "images/champwallart2-resize-min.jpg";
+	$scope.imgburlesons = "images/burlesons-resize-min.jpg";
 	$('#sidenav-overlay').trigger('click');
 	$scope.init = function(){
 		$(function () {
