@@ -184,6 +184,10 @@
  	padding-top: 100px;
  	text-shadow: 2px 2px 2px rgba(0,0,0,1);
  }
+ .footertext{
+ 	line-height:0;
+ 	font-size:1rem;
+ }
  @media only screen and (max-width : 992px) {
  	.parallax img {
  		max-height: 170%; /* or a little bit higher */
