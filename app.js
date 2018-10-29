@@ -5,6 +5,10 @@ var app = angular.module('app',['ui.router','slick'])
 	$scope.data='Framing';
 	$('#sidenav-overlay').trigger('click');
 	$scope.slides = [
+		{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing6.jpg",
+	"descs":["Alcohol Ink","Abstract","Artist:  Champ Burleson"]},
+	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing7.jpg",
+	"descs":["Alcohol Ink","Abstract","Artist:  Champ Burleson"]},
 	{"imgsrc":"https://raynerprogramming.github.io/affordableartandframes/images/champartframing2.jpg",
 	"title":"Octopus Garden",
 	"descs":["Alcohol Ink","Abstract","Artist:  Champ Burleson","Black matte frames"],
@@ -112,7 +116,7 @@ var app = angular.module('app',['ui.router','slick'])
 	"title":"Manchester United Team Signatures",
 	"descs":[]}
 	];
-	$scope.imgsrc = "images/champwallart2-resize-min.jpg";
+	$scope.imgsrc = "images/background.jpg";
 	$scope.pageinfo="Frame your memories, so they last forever.  We offer UV glass for convservation purposes."
 	/*
 	Frame your memories, so the last forever.  Offer UV glass.  Conversation pieces
@@ -126,7 +130,7 @@ var app = angular.module('app',['ui.router','slick'])
 
 .controller('HomeController',function($scope){
 	$scope.data='Home';
-	$scope.imgsrc1 = "images/champwallart2-resize-min.jpg";
+	$scope.imgsrc1 = "images/background.jpg";
 	$scope.imgburlesons = "images/burlesons-resize-min.jpg";
 	$('#sidenav-overlay').trigger('click');
 	$scope.init = function(){
